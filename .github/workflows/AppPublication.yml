@@ -1,4 +1,4 @@
-name: Publish to GitHub Pages
+name: Publish to GitHub Actions
 
 on:
   release:
@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Actions
         uses: peaceiris/actions-ghpages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
