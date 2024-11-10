@@ -12,10 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GitHub Actions
-        uses: peaceiris/actions-ghpages@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-ghpages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./_site
           publish_branch: ghpages
+          keep_files: true
     
