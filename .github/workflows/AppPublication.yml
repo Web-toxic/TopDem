@@ -27,7 +27,7 @@ jobs:
           cp -r $name site
           
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-ghpages@v3
+        uses: peaceiris/actions-ghpages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
